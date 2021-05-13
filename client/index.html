@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Chat</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://cdn.socket.io/socket.io-1.4.5.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script type="text/javascript" src="script.js"></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+</head>
+
+<body>
+  <div style="display: none" class="container">
+    <div class="messages-container">
+    </div>
+    <form id="msg-form" class="input-container">
+      <input id="text" placeholder="Type a message">
+      <input type="submit" value="SEND" class="send-button">
+      <input type="submit" value="LOGOUT" class="logout" >
+    </form>
+  </div>
+  <div class="login-view">
+    <input id="username" type="text" placeholder="Username">
+    <input id="password" type="password" placeholder="Password">
+    <button id="login">Login</button>
+    <button id="register">Register</button>
+  </div>
+  <div style="display:none" class="register-view">
+    <input id="username-register" type="text" placeholder="Username">
+    <input id="password-register" type="password" placeholder="Password">
+    <button id="register-user">Register</button>
+    <button id="back">Go Back</button>
+  </div>
+</body>
+
+</html>

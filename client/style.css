@@ -1,0 +1,142 @@
+body {
+  margin: 0;
+  font-family: Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.container, .login-view, .register-view {
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  background: #dae2f8;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(90deg, #d6a4a4, #dae2f8);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(90deg, #d6a4a4, #dae2f8); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.login-view, .register-view {
+  justify-content: center;
+} 
+.messages-container {
+  height: 90%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  overflow: scroll;
+}
+
+.message {
+  max-width: 60%;
+  color: rgb(102, 102, 102);
+  margin-bottom: 10px;
+  padding: 8px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  clear: both;
+}
+
+.left  {
+  background: #fff;
+}
+
+.right {
+  background: rgba(250, 250, 250, 0.5);
+  align-self: flex-end;
+}
+
+.message-time {
+  color: rgb(150, 150, 150);
+  padding-top: 5px;
+  font-size: 0.7rem;
+}
+
+.right .message-text {
+  text-align: right;
+}
+
+.right .message-time {
+  float: right;
+}
+.bold {
+  font-weight: bold;
+  color: black;
+  text-transform: capitalize;
+  font-size: 16px;
+}
+
+.input-container {
+  height: 12%;
+  display: flex;
+  flex-direction: row;
+  margin-top: auto;
+  padding: 15px 40px;
+  background: rgba(250, 250, 250, 0.4);
+  box-sizing: border-box;
+}
+
+input {
+  background: rgb(255, 255, 255);
+  align-self: center;
+  width: 96%;
+  height: 100%;
+  margin: 0 10px 0 0;
+  padding: 0 20px;
+  border: 0;
+  border-radius: 15px;
+  outline: none;
+  color: #666;
+  font-size: 1em;
+  font-family: Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#username, #password, #username-register, #password-register {
+  height: 50px;
+  width: 20%;
+  min-width: 300px;
+  margin-bottom: 10px;
+}
+
+#login, #register, #register-user, #back  {
+  margin-top: 20px;
+  height: 40px;
+  width: 20%;
+  min-width: 300px;
+  align-self: center;
+  cursor:pointer;
+  border: none;
+  color: gray;
+  border-radius: 20px;
+}
+
+#login:hover, #register:hover, #register-user:hover, #back:hover {
+  background-color:#dae2f8;
+  box-shadow: 0px 1px 0px 0px;
+  transition: 0.5s;
+  transform: scale(1.03);
+  
+}
+.send-button, .logout {
+  border-width: 0;
+  background: rgb(255, 255, 255);
+  outline: none;
+  width: 10%;
+  display: inline-block;
+  vertical-align: middle;
+  color: rgb(127, 132, 148);
+  border-radius: 15px;
+}
+
+.send-button:hover, .logout:hover {
+  background-color: rgb(192, 198, 222);
+  color: rgba(255, 255, 255);
+}
+
+@media only screen and (max-width: 600px) {
+  .send-button {
+    width: 20%;
+    min-width: 10px;
+  }
+
+  .input-container {
+    padding: 15px 20px;
+  }
+}
